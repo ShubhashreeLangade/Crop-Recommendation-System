@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Raj Agrotech</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/myhome.css') }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Raj Agrotech</h1>
+    <p style="color: black;">Raj Agrotech Welcomes you on our website, Hope you are earning well from your farm 
+      but we are here for you to provide some suggestions about your crop cultivation. 
+      We recommend you which crop you should grow in your farm for better yields. It's 
+      very easy to predict which crop you should grow based on your soil nutrients 
+      if you know your soil nutrients; for this, you can test your soil in a lab.</p>
+    <br>
+    <h3 style="color: black;">Let's Start a New Journey With Raj Agrotech</h3>
+    <br>
+    <h2 style="color: black;">Click the following button for Crop recommendation</h2>
+  </main>
+  <form action="/Predict">
+    <input type="submit" id="Predict" name="Predict" value="Predict">
+  </form>
+</body>
+</html>
